@@ -1,6 +1,6 @@
 {
   "name": "dedalo-ax",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "HTTP made easy",
   "type": "module",
   "main": "lib/index.js",
@@ -14,8 +14,7 @@
     "build": "tsc",
     "prepare": "npm run build",
     "version": "git add -A src",
-    "postversion": "git push && git push --tags",
-    "test": "jest --config jestconfig.json"
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "http",
