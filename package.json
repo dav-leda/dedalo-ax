@@ -1,0 +1,25 @@
+{
+  "name": "dedalo-ax",
+  "version": "1.0.0",
+  "description": "HTTP made easy",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/index.js",
+    "lib/index.d.ts",
+    "lib/index.js.map"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare" : "npm run build",
+    "version": "git add -A src",
+    "postversion" : "git push && git push --tags",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["http", "axios"],
+  "author": "David Leda",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
+}
