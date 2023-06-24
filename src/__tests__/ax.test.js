@@ -35,7 +35,7 @@ describe('ax.get', () => {
     global.fetch.mockImplementationOnce(() => mockFetchPromise)
 
     // Call the method
-    const result = await ax.get('https://example.com/api')
+    const result = await ax.get('https://jsonplaceholder.typicode.com/todos/1')
 
     // Verify the result is the parsed JSON response
     expect(result).toEqual(mockResponse)
@@ -52,7 +52,7 @@ describe('ax.get', () => {
     const consoleSpy = jest.spyOn(console, 'log')
 
     // Call the method
-    await ax.get('https://example.com/api')
+    await ax.get('https://jsonplaceholder.typicode.com/todos/1')
 
     // Verify the error is logged
     expect(consoleSpy).toHaveBeenCalledWith(mockError)

@@ -1,4 +1,4 @@
-import fetch from 'node-fetch'
+
 
 const headers = { 'Content-Type': 'application/json' }
 
@@ -39,13 +39,9 @@ export default {
   },
 
   async fetchData(url: string, options: object): Promise<any> {
-
-    const controller = new AbortController()
-    const { signal } = controller
-    setTimeout(() => controller.abort(), 5 * 1000)
  
     try {
-      const response = await fetch(url, { ...options, signal })
+      const response = await fetch(url, options)
       return response.json()
 
     } catch (error) {
