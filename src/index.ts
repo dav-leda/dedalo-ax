@@ -1,7 +1,7 @@
 
 const headers = { 'Content-Type': 'application/json' }
 
-export const ax = {
+export default {
 
   async get(url: string): Promise<any> {
 
