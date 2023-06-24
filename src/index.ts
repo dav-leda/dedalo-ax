@@ -39,9 +39,13 @@ export default {
   },
 
   async fetchData(url: string, options: object): Promise<any> {
+
+    const controller = new AbortController()
+    const { signal } = controller
+    setTimeout(() => controller.abort(), 5000)
  
     try {
-      const response = await fetch(url, options)
+      const response = await fetch(url, { ...options, signal })
       return response.json()
 
     } catch (error) {
