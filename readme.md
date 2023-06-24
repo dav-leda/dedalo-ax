@@ -25,17 +25,19 @@ pnpm add dedalo-ax
 ### Usage:
 
 ```js
+
+// Frontend framework (React, Vue, Svelte, etc)
 import ax from 'dedalo-ax';
 
+// Browser
+import ax from 'https://unpkg.com/dedalo-ax';
+
 const url = 'https://example.com/api/v1/';
-
 const data = { username: 'foo' };
-
 const updatedData = { username: 'bar' };
-
 const id = '1';
-
 const endpoint = url + '/' + id;
+
 
 // GET REQUEST
 ax.get(url)
