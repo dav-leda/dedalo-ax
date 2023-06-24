@@ -1,6 +1,6 @@
 {
   "name": "dedalo-ax",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A lightweight alternative to Axios written in TypeScript.",
   "type": "module",
   "main": "lib/index.js",
@@ -16,7 +16,11 @@
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "keywords": [ "http", "axios", "fetch" ],
+  "keywords": [
+    "http",
+    "axios",
+    "fetch"
+  ],
   "author": "David Leda",
   "license": "ISC",
   "repository": "https://github.com/dav-leda/dedalo-ax",
