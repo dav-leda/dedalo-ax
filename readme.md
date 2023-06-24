@@ -4,6 +4,8 @@
 
 **Warning:** To keep it lightweight **this is a browser only library**. It does **not** work in Node.js
 
+<hr>
+
 ### Install:
 
 Using npm:
@@ -21,6 +23,8 @@ Using pnpm
 ```sh
 pnpm add dedalo-ax
 ```
+
+<hr>
 
 ### Usage:
 
@@ -55,4 +59,6 @@ ax.update(endpoint, updatedData)
 ax.delete(endpoint)
   .then(res => console.log(res));
 ```
+<hr>
+
 
