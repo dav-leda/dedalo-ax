@@ -1,6 +1,6 @@
 {
   "name": "dedalo-ax",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "HTTP made easy",
   "type": "module",
   "main": "lib/index.js",
