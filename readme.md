@@ -2,7 +2,6 @@
 
 ## A lightweight alternative to Axios written in TypeScript
 
-<hr>
 <br>
 
 **Just 778 bytes minified! 389 bytes minified + gzipped!**
