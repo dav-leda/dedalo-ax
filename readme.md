@@ -85,7 +85,7 @@ ax.post(url, data)
   .then(res => console.log(res));
 
 // PUT REQUEST
-ax.update(endpoint, updatedData)
+ax.put(endpoint, updatedData)
   .then(res => console.log(res));
 
 // DELETE REQUEST
