@@ -24,6 +24,7 @@
   "author": "David Leda",
   "license": "ISC",
   "repository": "https://github.com/dav-leda/dedalo-ax",
+  "homepage": "https://dav-leda.github.io/dedalo-ax/",
   "devDependencies": {
     "typescript": "^5.1.3"
   }
