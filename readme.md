@@ -9,7 +9,7 @@
 
 <br>
 
-Check it in **bundlephobia**:
+Check it out in **bundlephobia**:
 
 <a href="https://bundlephobia.com/package/dedalo-ax" target="_blank">
   https://bundlephobia.com/package/dedalo-ax
@@ -46,7 +46,7 @@ Using yarn:
 ```sh
 yarn add dedalo-ax
 ```
-Using pnpm
+Using pnpm:
 
 ```sh
 pnpm add dedalo-ax
