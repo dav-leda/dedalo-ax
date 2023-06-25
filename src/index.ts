@@ -45,8 +45,8 @@ export default {
     setTimeout(() => controller.abort(), 5000)
  
     try {
-      const response = await fetch(url, { ...options, signal })
-      return response.json()
+      const res = await fetch(url, { ...options, signal })
+      return res.json()
 
     } catch (error) {
       console.log(error)

@@ -19,7 +19,17 @@
   "keywords": [
     "http",
     "axios",
-    "fetch"
+    "fetch",
+    "api",
+    "ajax",
+    "request",
+    "promise",
+    "async",
+    "await",
+    "typescript",
+    "ts",
+    "bundlephobia",
+    "lightweight"
   ],
   "author": "David Leda",
   "license": "ISC",

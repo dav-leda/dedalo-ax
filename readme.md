@@ -24,7 +24,7 @@ For comparison, check Axios (29.5Kb):
 
 <br>
 
-Needless to say, Axios is much more advanced and has many more features (being isomorphic is just one of them) but **dedalo-ax** covers most of Axios' use cases in frontend frameworks and the browser 👍️
+Needless to say, Axios is much more advanced and has many more features (being isomorphic is just one of them) but **dedalo-ax** covers most of Axios' use cases for frontend frameworks and the browser 👍️
 
 <br>
 <hr>
@@ -58,7 +58,6 @@ pnpm add dedalo-ax
 <br>
 
 ```js
-
 // Frontend framework (React, Vue, Svelte, etc)
 import ax from 'dedalo-ax';
 
@@ -66,7 +65,7 @@ import ax from 'dedalo-ax';
 import ax from 'https://unpkg.com/dedalo-ax';
 
 // Replace example url with your API url
-const url = 'https://example.com/api/v1';
+const url = 'https://example.com/api/users';
 
 // Data
 const data = { username: 'foo' };
@@ -74,7 +73,7 @@ const updatedData = { username: 'bar' };
 
 // Endpoint
 const id = '1';
-const endpoint = url + '/users/' + id;
+const endpoint = url + '/' + id;
 
 // GET REQUEST
 ax.get(url)
