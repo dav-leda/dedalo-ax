@@ -14,7 +14,7 @@ Check it out in **bundlephobia**:
   https://bundlephobia.com/package/dedalo-ax
 </a>
 
-<br><br>
+<br>
 
 For comparison, check Axios (29.5Kb):
 
@@ -22,7 +22,7 @@ For comparison, check Axios (29.5Kb):
   https://bundlephobia.com/package/axios
 </a>
 
-<br><br>
+<br>
 
 Obviously, Axios is much more advanced and has many more features (being isomorphic is just one of them) but **dedalo-ax** covers most of Axios' use cases in frontend frameworks and the browser 👍️
 

@@ -21,7 +21,7 @@ export default {
     return await this.fetchData(url, options)
   },
 
-  async update(url: string, data: any): Promise<any> {
+  async put(url: string, data: any): Promise<any> {
 
     const method = 'PUT'
     const body = JSON.stringify(data)
