@@ -24,7 +24,7 @@ For comparison, check Axios (29.5Kb):
 
 <br>
 
-Obviously, Axios is much more advanced and has many more features (being isomorphic is just one of them) but **dedalo-ax** covers most of Axios' use cases in frontend frameworks and the browser 👍️
+Needless to say, Axios is much more advanced and has many more features (being isomorphic is just one of them) but **dedalo-ax** covers most of Axios' use cases in frontend frameworks and the browser 👍️
 
 <br>
 <hr>
