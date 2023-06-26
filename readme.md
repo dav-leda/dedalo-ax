@@ -62,6 +62,8 @@ pnpm add dedalo-ax
 import ax from 'dedalo-ax';
 
 // Browser
+// import statements must be inside scripts of type "module"
+// <script type="module">
 import ax from 'https://unpkg.com/dedalo-ax';
 
 // Replace example url with your API url
