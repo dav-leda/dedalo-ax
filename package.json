@@ -1,6 +1,6 @@
 {
   "name": "dedalo-ax",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "A lightweight alternative to Axios written in TypeScript.",
   "type": "module",
   "main": "lib/index.js",
