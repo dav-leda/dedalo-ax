@@ -185,10 +185,8 @@ export default App
     <h1 class="title">dedalo-ax + Vue 3</h1>
 
     <p v-if="loading">Loading...</p>
-    {% raw %}
     <p v-else-if="error">{{ error }}</p>
     <pre v-else>{{ data }}</pre>
-    {% endraw %}
 
   </main>
 </template>
@@ -226,10 +224,8 @@ watchEffect(async () => {
     <h1 class="title">dedalo-ax + Vue 2</h1>
 
     <p v-if="loading">Loading...</p>
-    {% raw %}
     <p v-else-if="error">{{ error }}</p>
     <pre v-else>{{ data }}</pre>
-    {% endraw %}
 
   </main>
 </template>
