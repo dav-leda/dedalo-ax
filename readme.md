@@ -33,7 +33,7 @@ Needless to say, Axios is much more advanced and has many more features (being i
 <hr>
 
 ### Install:
-<br>
+
 
 Using npm:
 
@@ -54,7 +54,7 @@ pnpm add dedalo-ax
 <hr>
 
 ### Usage:
-<br>
+
 
 ```js
 // Frontend framework (React, Vue, Svelte, etc)
@@ -93,13 +93,15 @@ ax.delete(endpoint)
   .then(res => console.log(res));
 ```
 <hr>
+
 ### Abort Controller
 
 The abort controller has a timespan of 5 seconds by default after which, if the server doesn't respond, the request is aborted.
 
 <hr>
+
 ### Use with React
-<br>
+
 
 ```js
 import { useState, useEffect } from 'react';
@@ -135,9 +137,11 @@ const App = () => {
 
 export default App
 ```
+
 <hr>
+
 ### Use with Svelte
-<br>
+
 
 ```js
 <script>
@@ -169,8 +173,10 @@ export default App
 ```
 
 <hr>
+
 ### Use with Vue 3 (Composition API)
-<br>
+
+
 
 ```html
 <template>
@@ -179,8 +185,10 @@ export default App
     <h1 class="title">dedalo-ax + Vue 3</h1>
 
     <p v-if="loading">Loading...</p>
+    {% raw %}
     <p v-else-if="error">{{ error }}</p>
     <pre v-else>{{ data }}</pre>
+    {% endraw %}
 
   </main>
 </template>
@@ -204,9 +212,12 @@ watchEffect(async () => {
 })
 </script>
 ```
+
 <hr>
+
+
 ### Use with Vue 2 (Options API)
-<br>
+
 
 ```html
 <template>
@@ -215,8 +226,10 @@ watchEffect(async () => {
     <h1 class="title">dedalo-ax + Vue 2</h1>
 
     <p v-if="loading">Loading...</p>
+    {% raw %}
     <p v-else-if="error">{{ error }}</p>
     <pre v-else>{{ data }}</pre>
+    {% endraw %}
 
   </main>
 </template>
@@ -244,4 +257,5 @@ export default {
 }
 </script>
 ```
+
 <hr>
