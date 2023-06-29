@@ -4,7 +4,7 @@
 
 <hr>
 
-**Just 778 bytes minified! 389 bytes minified + gzipped!** 
+**Just 823 bytes minified! 407 bytes minified + gzipped!** 
 
 <hr>
 
@@ -14,7 +14,7 @@ Check it out in **bundlephobia**:
   https://bundlephobia.com/package/dedalo-ax
 </a>
 
-<br>
+<br><br>
 
 For comparison, check Axios (29.5Kb):
 
@@ -26,7 +26,6 @@ For comparison, check Axios (29.5Kb):
 
 Needless to say, Axios is much more advanced and has many more features (being isomorphic is just one of them) but **dedalo-ax** covers most of Axios' use cases for frontend frameworks and the browser 👍️
 
-<br>
 <hr>
 
 **Warning:** To keep it lightweight **this is a browser only library**. It does **not** work in Node.js 🤷‍♂️️ 
@@ -93,11 +92,12 @@ ax.put(endpoint, updatedData)
 ax.delete(endpoint)
   .then(res => console.log(res));
 ```
-
+<hr>
 ### Abort Controller
 
 The abort controller has a timespan of 5 seconds by default after which, if the server doesn't respond, the request is aborted.
 
+<hr>
 ### Use with React
 <br>
 
@@ -135,7 +135,7 @@ const App = () => {
 
 export default App
 ```
-
+<hr>
 ### Use with Svelte
 <br>
 
@@ -168,6 +168,7 @@ export default App
 </main>
 ```
 
+<hr>
 ### Use with Vue 3 (Composition API)
 <br>
 
@@ -203,7 +204,7 @@ watchEffect(async () => {
 })
 </script>
 ```
-
+<hr>
 ### Use with Vue 2 (Options API)
 <br>
 
@@ -243,3 +244,4 @@ export default {
 }
 </script>
 ```
+<hr>
