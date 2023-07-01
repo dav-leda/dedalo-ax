@@ -24,11 +24,13 @@ For comparison, check Axios (29.5Kb):
 
 <br>
 
-Needless to say, Axios is much more advanced and has many more features (being isomorphic is just one of them) but **dedalo-ax** covers most of Axios' use cases for frontend frameworks and the browser 👍️
+Needless to say, Axios is much more advanced and has many more features but **dedalo-ax** covers most of Axios' use cases: simple HTTP requests using JSON as the content type ✅️
 
 <hr>
 
-**Warning:** To keep it lightweight **this is a browser only library**. It does **not** work in Node.js 🤷‍♂️️ 
+**Node.js:** Since version 18 Node.js includes the native **fetch API**, making [node-fetch](https://www.npmjs.com/package/node-fetch) **no longer necessary** 👍️
+
+Therefore, **SSR usage will only work if Node.js is v18 or higher** ⚠️ As for CSR (i.e., vanilla React, Svelte, Vue, etc.) the Node.js version won't matter 👍️
 
 <hr>
 
@@ -57,13 +59,13 @@ pnpm add dedalo-ax
 
 
 ```js
-// Frontend framework (React, Vue, Svelte, etc)
-import ax from 'dedalo-ax';
+// Frontend Framework (React, Vue, Svelte, etc)
+import { ax } from 'dedalo-ax';
 
-// Browser
+// Vanilla JS (Browser)
 // Remember: import statements must be inside script of type "module"
 // <script type="module">
-import ax from 'https://unpkg.com/dedalo-ax';
+import { ax } from 'https://unpkg.com/dedalo-ax';
 
 // Replace example url with your API url
 const url = 'https://example.com/api/users';
@@ -100,12 +102,12 @@ The abort controller has a timespan of 5 seconds by default after which, if the 
 
 <hr>
 
-### Use with React
+### Use with React:
 
 
 ```js
 import { useState, useEffect } from 'react';
-import ax from 'dedalo-ax';
+import { ax } from 'dedalo-ax';
 
 const { stringify } = JSON;
 const url = 'https://jsonplaceholder.typicode.com/todos/1';
@@ -140,13 +142,13 @@ export default App
 
 <hr>
 
-### Use with Svelte
+### Use with Svelte:
 
 
 ```js
 <script>
 
-  import ax from 'dedalo-ax';
+  import { ax } from 'dedalo-ax';
 
   const { stringify } = JSON;
   const url = 'https://jsonplaceholder.typicode.com/todos/1';
@@ -174,27 +176,13 @@ export default App
 
 <hr>
 
-### Use with Vue 3 (Composition API)
-
+### Use with Vue 3 (Composition API):
 
 
 ```html
-<template>
-  <main>
-    
-    <h1 class="title">dedalo-ax + Vue 3</h1>
-
-    <p v-if="loading">Loading...</p>
-    <p v-else-if="error">{{ error }}</p>
-    <pre v-else>{{ data }}</pre>
-
-  </main>
-</template>
-
 <script setup>
 import { ref, watchEffect } from 'vue';
-
-import ax from 'dedalo-ax';
+import { ax } from 'dedalo-ax';
 
 const url = 'https://jsonplaceholderr.typicode.com/todos/1';
 
@@ -209,12 +197,24 @@ watchEffect(async () => {
   loading.value = false
 })
 </script>
+
+<template>
+  <main>
+    
+    <h1 class="title">dedalo-ax + Vue 3</h1>
+
+    <p v-if="loading">Loading...</p>
+    <p v-else-if="error">{{ error }}</p>
+    <pre v-else>{{ data }}</pre>
+
+  </main>
+</template>
 ```
 
 <hr>
 
 
-### Use with Vue 2 (Options API)
+### Use with Vue 2 (Options API):
 
 
 ```html
@@ -232,7 +232,7 @@ watchEffect(async () => {
 
 <script>
 
-import ax from 'dedalo-ax';
+import { ax } from 'dedalo-ax';
 
 const url = 'https://jsonplaceholder.typicode.com/todos/1';
 

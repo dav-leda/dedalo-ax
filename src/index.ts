@@ -2,7 +2,7 @@
 
 const headers = { 'Content-Type': 'application/json' }
 
-export default {
+export const ax = {
 
   error: null,
 
